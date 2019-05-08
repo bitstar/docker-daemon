@@ -15,5 +15,7 @@ RUN sed -i 's/archive/old-releases/g' /etc/apt/sources.list && \
 	chmod +x /home/bitstarcoin/bitstard
 	
 USER bitstarcoin
-        
+
+EXPOSE 62123
+
 CMD ["/home/bitstarcoin/bitstard"]
