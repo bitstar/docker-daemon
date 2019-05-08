@@ -10,6 +10,7 @@ RUN sed -i 's/archive/old-releases/g' /etc/apt/sources.list && \
 	mkdir /home/bitstarcoin && \
         wget --no-verbose https://github.com/bitstar/bitstarcoin/releases/download/v2.0.0.1-linux-daemon/bitstarcoind -O /home/bitstarcoin/bitstard && \
 	mkdir /home/bitstarcoin/.bitstarcoin && \
+	touch /home/bitstarcoin/.bitstarcoin/bitstarcoin.conf && \
 	echo -e "rpcuser=$(cat /dev/urandom | fold -w 80 | base64 | head -n 1)\nrpcpassword=$(cat /dev/urandom | base64 | fold -w 80 | head -n 1)" > /home/bitstarcoin/.bitstarcoin/bitstarcoin.conf && \
         chown -R bitstarcoin:bitstarcoin /home/bitstarcoin && \
 	chmod +x /home/bitstarcoin/bitstard
