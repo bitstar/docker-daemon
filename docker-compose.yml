@@ -8,4 +8,4 @@ services:
     ports:
       - 62123:62123
     volumes:
-      - ./bitstarcoin/:/root/
+      - ./bitstarcoin/:/home/bitstarcoin/
