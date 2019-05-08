@@ -1,7 +1,7 @@
 version: '2'
 services:
   bitstar:
-    image: bitstarcoin/linux-node
+    image: bitstarcoin/linux-node:latest
     restart: always
     networks:
       - bridge
