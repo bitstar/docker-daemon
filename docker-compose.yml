@@ -1,11 +1,15 @@
 version: '2'
 services:
   bitstar:
-    image: bitstarcoin/linux-daemon
+    image: bitstarcoin/linux-node
     restart: always
     networks:
       - bridge
     ports:
       - 62123:62123
     volumes:
-      - ./bitstarcoin/:/home/bitstarcoin/
+      - bitstarcoin:/home/bitstarcoin/
+volumes:
+  bitstarcoin:
+    name: bitstarcoin
+    driver: local
