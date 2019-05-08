@@ -1,4 +1,4 @@
-Bitstar Coin V1.2.3 Node
+Bitstar Coin V2.0.0.1 Linux Node
 ========
 
 This image is to run Bitstar daemon as a node but if you add your wallet.dat into /home/bitstarcoin/.bitstarcoin it can also be a personal wallet.
