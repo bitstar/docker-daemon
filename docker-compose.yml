@@ -1,0 +1,11 @@
+version: '2'
+services:
+  bitstar:
+    image: bitstarcoin/linux-daemon
+    restart: always
+    networks:
+      - bridge
+    ports:
+      - 62123:62123
+    volumes:
+      - ./bitstarcoin/:/root/
