@@ -16,6 +16,6 @@ RUN sed -i 's/archive/old-releases/g' /etc/apt/sources.list && \
 	
 USER bitstarcoin
 
-EXPOSE 62123
+EXPOSE 19534
 
 CMD ["/home/bitstarcoin/bitstard"]
