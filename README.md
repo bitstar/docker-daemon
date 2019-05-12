@@ -6,7 +6,7 @@ This image is to run Bitstar daemon as a node but if you add your wallet.dat int
 ## Run this Image from command line
 
 ```
-docker run -d --name bitstarcoin -p 62123:62123 -v bitstarcoin:/home/bitstarcoin index.docker.io/bitstarcoin/linux-node:latest
+docker run -d --name bitstarcoin -p 19534:19534 -v bitstarcoin:/home/bitstarcoin index.docker.io/bitstarcoin/linux-node:latest
 ```
 
 
@@ -21,7 +21,7 @@ services:
     networks:
       - bridge
     ports:
-      - 62123:62123
+      - 19534:19534
     volumes:
       - bitstarcoin:/home/bitstarcoin/
 volumes:
