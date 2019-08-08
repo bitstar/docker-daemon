@@ -35,3 +35,4 @@ volumes:
 ```
 docker exec -i -t bitstarcoin /home/bitstarcoin/bitstard getinfo
 ```
+
